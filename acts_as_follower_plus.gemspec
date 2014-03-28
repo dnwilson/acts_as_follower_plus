@@ -3,15 +3,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require "acts_as_follower_plus/version"
 
 Gem::Specification.new do |s|
-  s.name        = "acts_as_follower_plus-v2"
+  s.name        = "acts_as_follower_plus"
   s.version     = ActsAsFollowerPlus::VERSION
   s.authors     = ["Dane Wilson"]
   s.email       = ["dnkw at hotmail dot com"]
-  s.homepage    = "https://github.com/dnwilson/acts_as_follower_plus-v2"
+  s.homepage    = "https://github.com/dnwilson/acts_as_follower_plus"
   s.summary     = %q{A Rubygem to add enhanced Follow functionality for ActiveRecord models}
   s.description = %q{acts_as_follower_plus is a Rubygem based on acts_as_follower, with support for private followable objects which must give approval before allowing the follow association}
 
-  s.rubyforge_project = "acts_as_follower_plus-v2"
+  s.rubyforge_project = "acts_as_follower_plus"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
