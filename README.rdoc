@@ -1,0 +1,59 @@
+= acts_as_follower_plus
+
+acts_as_follower_plus is a gem which forks from acts_as_follower, and provides simple privacy features to followable models. 
+
+A Followable model which implements:
+
+ private_followable
+
+Can have privacy enabled (via enable_privacy) 
+
+When privacy is enabled, Follows must be approved, before approval they are flagged as pending.
+
+There are helper methods, to find followers, pending, blocked etc...
+
+== Methods for acts_as_followable_plus
+
+  followers(options={})
+  followers_count
+  followers_by_type(follower_type, options={})
+  followers_by_type_count(follower_type)
+
+  blocks(options={})
+  blocked_followers_count
+
+  private?
+  enable_privacy
+  disable_privacy
+
+  pending(options={})
+  approve(follower)
+
+  followed_by?(follower)
+
+  block(follower)
+  unblock(follower)
+
+== Methods for acts_as_follower_plus
+
+  follow(followable)
+  stop_following(followable)
+
+  following?(followable)
+  follow_count
+
+  all_pending_follows(options={})
+  follows_pending_by_type(followable_type, options={})
+
+  all_follows(options={})
+  follows_by_type(followable_type, options={})
+
+  all_pending_followables(options={})
+
+  all_following(options={})
+
+  following_by_type(followable_type, options={})
+  following_by_type_count(followable_type)
+
+
+= See the existing acts_as_follower for more info docs.
